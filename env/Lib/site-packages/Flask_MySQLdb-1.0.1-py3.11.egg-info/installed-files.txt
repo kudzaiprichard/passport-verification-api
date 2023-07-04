@@ -1,0 +1,8 @@
+..\flask_mysqldb\__init__.py
+..\flask_mysqldb\__pycache__\__init__.cpython-311.pyc
+PKG-INFO
+SOURCES.txt
+dependency_links.txt
+not-zip-safe
+requires.txt
+top_level.txt
