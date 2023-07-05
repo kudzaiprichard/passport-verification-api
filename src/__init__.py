@@ -17,7 +17,8 @@ def create_app(test_config=None):
         app.config.from_mapping(
             SECRET_KEY = os.environ.get("SECRET_KEY"),
             SQLALCHEMY_DATABASE_URI=os.environ.get("SQLALCHEMY_DB_URI"),
-            JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
+            JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY'),
+            UPLOAD_FOLDER = os.path.join(base_dir, "static\\uploads") 
         )
         
         app.config.from_mapping(test_config)
