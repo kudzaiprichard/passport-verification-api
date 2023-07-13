@@ -17,7 +17,7 @@ def remove_all_image():
 
 
 @document.post("/passport")
-#@jwt_required()
+@jwt_required()
 def verify_passport():
     
     ##Upload passport image
@@ -35,15 +35,7 @@ def verify_passport():
     if file: 
         filename = secure_filename(file.filename)
         file.save(os.path.join(current_app.config['UPLOAD_FOLDER'], filename))
-            
 
-    # passport_image = ''
-    # #Get passport image for processing
-    # for image in os.listdir(current_app.config['UPLOAD_FOLDER']):
-    #     passport_image = passport_image + os.path.join(current_app.config['UPLOAD_FOLDER'], image)
-        
-    #passport = os.path.join(current_app.config['UPLOAD_FOLDER'], "passport.jpg")
-    
     #Get uploaded passport image for processing
     passport_image = os.path.join(current_app.config['UPLOAD_FOLDER'], filename)
     
