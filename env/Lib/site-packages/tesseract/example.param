@@ -1,0 +1,17 @@
+FilePrefix                   example
+FileSuffix                   
+PositionFile                 /path/to/snapshot.ext
+PositionFileFormat           0
+OutputDir                    /path/to/where/output/will/be/saved/
+PeriodicBoundariesOn         0
+Border                       0.1
+BoxSize                      0.0
+NumDivide                    1
+OutputAdjacenciesOn          -1
+MaxNumSnapshot               -1
+DecimateInputBy              1
+SquishY                      -1
+SquishZ                      -1
+ParticleType                 -1
+BgTreebiNskip                0
+Bgc2HaloId                   -1

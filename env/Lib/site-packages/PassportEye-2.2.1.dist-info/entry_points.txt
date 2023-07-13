@@ -1,0 +1,4 @@
+[console_scripts]
+evaluate_mrz = passporteye.mrz.scripts:evaluate_mrz
+extract_mrz_rois = passporteye.mrz.scripts:extract_mrz_rois
+mrz = passporteye.mrz.scripts:mrz

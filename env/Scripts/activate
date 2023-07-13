@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Kudzai Prichard\Documents\Projects\Kudzai\Pending\document verification\document-verification-api\env"
+VIRTUAL_ENV="C:\Users\KudzaiPrichard\Documents\Projects\Kudzai\Pending\document verification\document-verification-api\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
