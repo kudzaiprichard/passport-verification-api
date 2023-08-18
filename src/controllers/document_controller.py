@@ -49,6 +49,7 @@ def verify_passport():
         if(mrz_result):
             mrz_data = doc_verification.extract_info()
             if(doc_verification.validate_passport_details()):
+                remove_all_image()
                 return jsonify({
                     "authentic": True,
                     "forged": False,
@@ -65,17 +66,20 @@ def verify_passport():
                     }
                 }),HTTPStatus.OK
             else:
+                remove_all_image()
                 return jsonify({
                     'authentic': True,
                     'forged': False,
                     'message': "Passport details not valid"
                 }),HTTPStatus.OK
         else:
+            remove_all_image()
             return jsonify({
                 'authentic': mrz_result,
                 'message': "Could not detect passport Machine Readable Zone"
             }),HTTPStatus.OK
     else:
+        remove_all_image()
         return jsonify({
             'authentic': forgery_result,
             'forged': True,
